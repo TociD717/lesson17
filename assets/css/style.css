@@ -1,3 +1,19 @@
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+}
+
 .footer__container,
 .invitation__container,
 .integration__container,
@@ -476,7 +492,7 @@ a {
   text-align: center;
 }
 .functions__grid .web__image {
-  margin: 20 auto;
+  margin: 20px auto;
 }
 .functions__grid .web__header {
   margin-top: 26px;
@@ -510,7 +526,7 @@ a {
   text-align: center;
 }
 .functions__grid .mobile__image {
-  margin: 20 auto;
+  margin: 20px auto;
 }
 .functions__grid .mobile__header {
   margin-top: 26px;
@@ -544,7 +560,7 @@ a {
   text-align: center;
 }
 .functions__grid .games__image {
-  margin: 20 auto;
+  margin: 20px auto;
 }
 .functions__grid .games__header {
   margin-top: 26px;
@@ -578,7 +594,7 @@ a {
   text-align: center;
 }
 .functions__grid .documents__image {
-  margin: 20 auto;
+  margin: 20px auto;
 }
 .functions__grid .documents__header {
   margin-top: 26px;
@@ -612,7 +628,7 @@ a {
   text-align: center;
 }
 .functions__grid .marketing__image {
-  margin: 20 auto;
+  margin: 20px auto;
 }
 .functions__grid .marketing__header {
   margin-top: 26px;
@@ -646,7 +662,7 @@ a {
   text-align: center;
 }
 .functions__grid .iot__image {
-  margin: 20 auto;
+  margin: 20px auto;
 }
 .functions__grid .iot__header {
   margin-top: 26px;

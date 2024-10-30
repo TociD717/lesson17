@@ -1,0 +1,91 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-content {
+    padding-top: 115px;
+    padding-bottom: 10px;
+
+    &__container {
+        @extend %container;
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: 1345px){
+            justify-content: center;
+        }
+    }
+
+    .content__title {
+        font-weight: 600;
+        font-size: $header-fontsize;
+        line-height: 70px;
+        @media (max-width: 1345px){
+            text-align: center;
+        }
+    }
+
+    .content__text {
+        padding-top: 51px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 35px;
+        @media (max-width: 1345px){
+            text-align: center;
+        }
+    }
+
+    .content__buttons {
+        display: flex;
+        padding-top: 50px;
+        gap: $gap-sm;
+        @media (max-width: 1345px){
+            justify-content: center;
+        }
+    }
+
+    .content__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        width: 160px;
+        height: 60px;
+        background-color: $color-white;
+        color: $color-black;
+        font-weight: 600;
+        font-size: $navbar-fontsize;
+        line-height: 60px;
+        &--active {
+            background-color: $color-orange;
+            color: $color-white;
+            border: none;
+        }
+    }
+
+    .content__footer {
+        padding-top: 25px;
+        padding-bottom: 172px;
+        font-weight: 400;
+        font-size: $navbar-fontsize;
+        line-height: 25px;
+        @media (max-width: 1345px){
+            padding-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    .content__image {
+        height: 529px;
+        @media (max-width: 1345px){
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 770px){
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            max-width: 450px;
+            height: auto;
+        }
+    }
+}

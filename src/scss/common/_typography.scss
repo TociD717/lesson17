@@ -1,0 +1,23 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Graphik";
+}
+
+html {
+    overflow-y: scroll;
+  
+    font-family: $font-main;
+    font-size: $header-text-fontsize;
+  }
+
+a {
+    text-decoration: none;
+    color: $color-black;
+}

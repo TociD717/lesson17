@@ -1,0 +1,29 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.companies {
+    background-color: $color-peach;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__header {
+        display: flex;
+        padding-top: 100px;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    &__logos {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        padding-bottom: 100px;
+        @media (max-width: 940px){
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+}

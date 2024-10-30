@@ -1,0 +1,48 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.invitation {
+    background-color: $color-peach;
+    
+    &__container {
+        @extend %container;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__header {
+        font-weight: 600;
+        font-size: 65px;
+        line-height: 75px;
+        padding-top: 119px;
+        text-align: center;
+        padding-bottom: 29px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 54px;
+        text-align: center;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 160px;
+        height: 60px;
+        background-color: $color-black;
+        color: $color-white;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 60px;
+        margin-bottom: 161px;
+    }
+}

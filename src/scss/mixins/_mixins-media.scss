@@ -1,0 +1,7 @@
+@use "../presets" as *;
+
+@mixin res1345-min {
+    @media (max-width: 1340px){
+        @content;
+    }
+}

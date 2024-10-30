@@ -1,0 +1,168 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.functions {
+    background-color: $color-biege;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__header {
+        padding-top: 120px;
+        display: flex;
+        justify-content: center;
+    }
+    &__grid {
+        padding-top: 58px;
+        padding-bottom: 100px;
+        display: grid;
+        gap: 110px;
+        grid-template-areas: 
+            "web mobile games"
+            "documents marketing iot";
+        grid-template-columns: repeat(3, 1fr);
+        
+        .web {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+            &__image{
+                margin: 20 auto;
+            }
+            &__header {
+                margin-top: 26px;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 35px;
+            }
+            &__text {
+                margin-top: 20px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        .mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+                &__image{
+                    margin: 20 auto;
+                }
+                &__header {
+                    margin-top: 26px;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+                &__text {
+                    margin-top: 20px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+        }
+
+        .games {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+                &__image{
+                    margin: 20 auto;
+                }
+                &__header {
+                    margin-top: 26px;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+                &__text {
+                    margin-top: 20px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+        }
+
+        .documents {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+                &__image{
+                    margin: 20 auto;
+                }
+                &__header {
+                    margin-top: 26px;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+                &__text {
+                    margin-top: 20px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+        }
+
+        .marketing {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+                &__image{
+                    margin: 20 auto;
+                }
+                &__header {
+                    margin-top: 26px;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+                &__text {
+                    margin-top: 20px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+        }
+
+        .iot {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+                &__image{
+                    margin: 20 auto;
+                }
+                &__header {
+                    margin-top: 26px;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+                &__text {
+                    margin-top: 20px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+        }
+    
+        @media (max-width: 780px){
+            flex-wrap: wrap;
+        }
+    }
+}

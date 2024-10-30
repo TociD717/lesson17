@@ -1,0 +1,195 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.benefits {
+    background-color: $color-white;
+    &__container {
+        @extend %container;
+    }
+
+    .control {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        gap: 10px;
+
+        &__gif {
+            height: 632px;
+            width: 632px;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__header {
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 60px;
+            color: $color-black;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: $header-text-fontsize;
+            line-height: 30px;
+            padding-top: 30px;
+        }
+        &__link {
+            font-weight: 600;
+            font-size: $header-text-fontsize;
+            line-height: 30px;
+            padding-top: 30px;
+        }
+
+        @media (max-width: 960px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .shorten {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 250px;
+        gap: 10px;
+
+        &__gif {
+            height: 632px;
+            width: 632px;
+
+            @media (max-width: 960px) {
+                order: 2;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__header {
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 60px;
+            color: $color-black;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: $header-text-fontsize;
+            line-height: 30px;
+            padding-top: 30px;
+            @media (max-width: 960px) {
+                order: 1;
+            }
+        }
+        &__link {
+            font-weight: 600;
+            font-size: $header-text-fontsize;
+            line-height: 30px;
+            padding-top: 30px;
+        }
+
+        @media (max-width: 960px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .quality {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        gap: 10px;
+
+        &__gif {
+            height: 632px;
+            width: 632px;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__header {
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 60px;
+            color: $color-black;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: $header-text-fontsize;
+            line-height: 30px;
+            padding-top: 30px;
+        }
+        &__link {
+            font-weight: 600;
+            font-size: $header-text-fontsize;
+            line-height: 30px;
+            padding-top: 30px;
+        }
+
+        @media (max-width: 960px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .developers {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+        padding-bottom: 150px;
+        gap: 10px;
+
+        &__gif {
+            height: 577px;
+            width: 632px;
+            @media (max-width: 960px) {
+                order: 2;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__header {
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 60px;
+            color: $color-black;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: $header-text-fontsize;
+            line-height: 30px;
+            padding-top: 30px;
+            @media (max-width: 960px) {
+                order: 1;
+            }
+        }
+        &__link {
+            font-weight: 600;
+            font-size: $header-text-fontsize;
+            line-height: 30px;
+            padding-top: 30px;
+        }
+
+        @media (max-width: 960px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

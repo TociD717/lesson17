@@ -1,0 +1,9 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header {
+    background-color: $color-white;
+    &__container {
+    @extend %container;
+    }
+}
